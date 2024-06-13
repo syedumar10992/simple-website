@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: transparent;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(30, 30, 30);
+    color: #fff;
+}
+.containerr{
+    max-width: 1200px;
+    margin: 0 auto !important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.desktopMenu a.active {
+  color: rgb(253 224 71);
+  border-bottom: 4px solid ;
+  padding-bottom: 0.5rem;
+}
+
+.contactImg{
+    object-fit: cover;
+    width: 1rem;
+    height: 1rem;
+}
+
+strong.introName{
+    margin-bottom: 20px;
+}
+
+
+.image-container {
+    height: 60vh; 
+    overflow-y: hidden; 
+    border: none; 
+    width: 20rem;
+    border-radius: 20px;
+    position: relative;
+}
+
+.image-container img {
+  display: block;
+  height: auto;
+  transition: transform 5s ease; 
+}
+
+.image-container:hover img {
+  transform: translateY(-50%); /* Adjust the percentage to scroll the desired amount */
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(30, 30, 30); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(30, 30, 30); 
+  }
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  } */
+  .navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+  }
+
+  .navMenu .mbl {
+    color: #fff;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background:rgb(30, 30, 30);
+  }
+  .mobMenu{
+    display: none;
+    object-fit: cover;
+    height:3.8rem;
+  }
+
+
+
+  @media only screen and (max-width: 767px) {
+    .mobMenu{
+      display: flex;
+    }
+
+    .desktopMenu{
+      display: none;
+    }
+
+  }
