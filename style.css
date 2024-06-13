@@ -80,22 +80,23 @@ strong.introName{
   /* ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   } */
-  .navMenu{
+  .navMenu {
     position: absolute;
-    top: 6.5rem;
+    top: 5.5rem;
     right: 0;
-    left:0;
+    left: 0;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    background:rgb(31 165 208 );
+    background: rgb(133 132 132);
     transition: max-height 0.5s ease-in-out;
-      }
+    min-height: 100vh;
+}
 
   .navMenu .mbl {
     color: #fff;
     padding: 0.5rem 1rem;
-    margin: 0.25rem;
+    margin: 0.25rem 0;
     border-bottom: 1px solid #fff;
     /* background:rgb(31 165 208 / 81%); */
   }
@@ -110,6 +111,11 @@ strong.introName{
   img.mobMenu {
     width: 40px;
     height: 30px;
+    /* display: none; */
+}
+.navMenu a.active {
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
 
 
@@ -122,5 +128,10 @@ strong.introName{
     .desktopMenu{
       display: none;
     }
+    img.mobMenu {
+
+      /* display: block; */
+  }
+    
 
   }

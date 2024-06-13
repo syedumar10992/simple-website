@@ -26,13 +26,13 @@ const Navbar = () => {
                 <img 
                     src={mobileMenu} 
                     alt='Menu' 
-                    className={`mobMenu ${showMenu ? 'hidden' : 'block'}`} 
+                    className={`mobMenu ${showMenu ? 'hidden' : 'block'} md:hidden`} 
                     onClick={() => setShowMenu(true)} 
                 />
                 <img 
                     src={crossMenu} 
                     alt='Close' 
-                    className={`mobMenu ${showMenu ? 'block' : 'hidden'}`} 
+                    className={`mobMenu ${showMenu ? 'block' : 'hidden'} md:hidden`} 
                     onClick={() => setShowMenu(false)} 
                 />
                 <div className='navMenu' style={{display: showMenu? 'flex':'none'}}>
