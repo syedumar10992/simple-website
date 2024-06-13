@@ -82,29 +82,35 @@ strong.introName{
   } */
   .navMenu{
     position: absolute;
-    top: 4rem;
-    right: 2rem;
+    top: 6.5rem;
+    right: 0;
+    left:0;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
-    height: fit-content;
-    min-width: 15rem;
-    background: rgb(40, 40, 40);
-    border-radius: 1rem;
-  }
+    background:rgb(31 165 208 );
+    transition: max-height 0.5s ease-in-out;
+      }
 
   .navMenu .mbl {
     color: #fff;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
     margin: 0.25rem;
-    background:rgb(30, 30, 30);
+    border-bottom: 1px solid #fff;
+    /* background:rgb(31 165 208 / 81%); */
+  }
+  .navMenu .mbl:last-child{
+    border:none;
   }
   .mobMenu{
     display: none;
     object-fit: cover;
     height:3.8rem;
   }
+  img.mobMenu {
+    width: 40px;
+    height: 30px;
+}
 
 
 
